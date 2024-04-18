@@ -197,7 +197,7 @@ Key terms:
 :::
 :::
 
-## GitHub workflow - 
+## GitHub workflow with version control
 
 ```{mermaid}
 %%| fig-responsive: false
@@ -216,6 +216,8 @@ Key terms:
       linkStyle 3 color:red;
 
 ```
+
+Can go back to previous versions, provided that the local repo and master repo are up-to-date.
 
 ## What should I be pushing to GitHub?
 
@@ -270,4 +272,9 @@ Work on one local repo at a time
 
 ## Gitting set up!
 
-Initial setup is a horrible process...
+Initial setup is a bit harrowing... and it involves a few tedious steps.
+Bear with me!
+
+-   Setting up a Github.com account
+
+-   Creating a Personal Access Token (PAT)
