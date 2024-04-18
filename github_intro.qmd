@@ -1,0 +1,158 @@
+---
+title: "Secure workflow with R and GitHub"
+author: "Thomas Wilkins"
+format: revealjs
+editor: visual
+---
+
+## This session {.smaller}
+
+::: columns
+::: {.column width="50%"}
+-   Introduction to Git
+
+-   Incorporate git into your R workflow
+
+-   Gitting started with GitHub in R
+:::
+
+::: {.column width="50%"}
+![](https://i.ibb.co/wzgcj3X/qr-code-gitr.png){fig-align="center" width="270"}
+:::
+:::
+
+::: {layout="[[1], [70,30]]"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){width="569"}![](https://i.ibb.co/x13T9Bm/github-logo.png){fig-align="center" width="382"}
+:::
+
+## What are git and GitHub? {.smaller}
+
+</br>
+
+-   Git (Global Information Tracker) is a system for managing version control and collaborations
+
+    -   Stores a copy of every committed\* version
+
+    -   Tracks **who** did **what** and **when**
+
+    -   Integrated R workflow
+
+</br>
+
+::: incremental
+-   GitHub is a web application for managing git
+
+    -   Point-and-click interface
+
+    -   Cloud-based file storage
+:::
+
+## Why do I need any of that?
+
+</br>
+
+::: columns
+::: {.column width="60%"}
+-   *Version control*
+
+::: incremental
+-   Collaboration
+
+-   Documentation
+
+-   Reproducibility
+
+-   Data Loss Prevention
+:::
+:::
+
+::: {.column width="40%"}
+![](https://imgs.xkcd.com/comics/documents.png)
+:::
+:::
+
+## 
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Windows_XP_Blue_Screen_of_Death_%28Forced%29.svg/1280px-Windows_XP_Blue_Screen_of_Death_%28Forced%29.svg.png){.absolute left="0" top="0" width="1050"}
+
+## Data loss prevention {.smaller}
+
+Bad practices:
+
+::: incremental
+-   Local storage (Hard disk, USB flash drives)
+-   Breaking file paths (Moving files around)
+-   Duplicate files
+:::
+
+Good practices:
+
+::: incremental
+-   Get files away from your computer!
+-   Develop a model for clean workflow
+:::
+
+##  {.smaller}
+
+::: columns
+::: {.column width="33%"}
+![](https://i.ibb.co/hsqz2sb/github-logo-7880-D80-B8-D-seeklogo-com.png){fig-align="center" width="250" height="250"}
+:::
+
+::: {.column width="33%"}
+![](https://i.ibb.co/fpX20YN/7def1485a80115c48e19b450e6a39e4a.jpg){fig-align="center" width="250"}
+
+Database
+:::
+
+::: {.column width="33%"}
+![](https://i.ibb.co/QfGCnw3/2840068.png){fig-align="center" width="250"}
+
+Data and documents
+:::
+:::
+
+## Working with GitHub
+
+::: columns
+::: {.column width="33%"}
+:::
+
+::: {.column width="33%"}
+:::
+
+::: {.column width="34%"}
+:::
+:::
+
+::: columns
+::: {.column width="50%"}
+:::
+
+::: {.column width="50%"}
+:::
+:::
+
+## What should I store on GitHub?
+
+-   Code files
+
+    -   R scripts and Rmarkdown files
+
+-   Documentation
+
+    -   Readme files
+
+    -   **Quarto documents**
+
+## What should I NOT store on GitHub?
+
+-   Large files (\<100MG)
+
+-   MS documents\*
+
+-   Raw or unpublished data
+
+-   Image files
+
+## 
