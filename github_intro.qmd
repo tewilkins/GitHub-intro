@@ -318,7 +318,9 @@ All instructions come from [happygitwithr.com:](https://happygitwithr.com/)
 
 -   Set up a [Github.com](https://github.com/) account
 
--   Create a Personal Access Token (PAT)
+-   [Install git (Windows)](https://gitforwindows.org/)
+
+-   Create a **Personal Access Token (PAT)** or **SSH key**
 
 -   Test the connection between GitHub and your computer
 
@@ -332,7 +334,174 @@ All instructions come from [happygitwithr.com:](https://happygitwithr.com/)
 :::
 :::
 
+## Is git installed? {.smaller}
+
+</br>
+
+Open **Terminal** or **RStudio**, find terminal tab next to console and paste:
+
+```{bash}
+which git
+## /usr/bin/git
+
+git --version
+## git version 2.32.1 (Apple Git-133)
+
+git config --global core.editor "emacs"
+```
+
+</br>
+
+If you get output like this, you can celebrate by moving on to the next step.
+
+</br>
+
+If git isn't installed on your computer, follow steps in [Chapter 6 - Install Git](https://happygitwithr.com/install-git).
+
+Steps in [Chapter 7 - Introduce yourself to Git](https://happygitwithr.com/hello-git) can be done on the GitHub website:
+
+-   Add additional user emails - very important!
+
+-   Change initial branch - not important.
+
+## Gitting acquainted with R {.smaller}
+
+</br>
+
+Next we need to open a channel for Git and R to communicate.
+Password authentication support has been removed from GitHub in 2021.
+It now requires authentication via credential setup:
+
+::: fragment
+-   [Personal Access Token (PAT) for HTTPS (Chapter 9)](https://happygitwithr.com/https-pat)
+
+    -   Easy, quick, sensible - no Terminal needed!
+
+    -   Not compatible with all Linux OS
+
+    -   My advice - always set expiration to 'No Expiration'
+
+    -   Keep a copy of your PAT - can be stored in RStudio
+:::
+
+::: fragment
+-   [Public-private SSH key pair (Chapter 10)](https://happygitwithr.com/ssh-keys)
+
+    -   Necessary for RCP servers
+    -   Involves a lot of Terminal - be careful...
+
 ## 
+:::
+
+## PAT on the back for RStudio {.smaller}
+
+</br>
+
+PATs can be crated and stored entirely within RStudio with the following commands:
+
+```{r}
+#| eval: false
+#| echo: true
+usethis::create_github_token()
+```
+
+</br>
+
+This opens your browser and takes you to the GitHub.com site to create a new github token.
+
+-   Keep your generated PAT somewhere temporarily!
+
+-   Store it in RStudio:
+
+```         
+> gitcreds::gitcreds_set()
+
+? Enter password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+-> Adding new credentials...
+-> Removing credentials from cache...
+-> Done.
+```
+
+## PAT on the back for RStudio {.smaller}
+
+</br>
+
+Check that you've stored a credential with `gitcreds::gitcreds_get()`:
+
+```         
+> gitcreds_get()
+#> <gitcreds>
+#>   protocol: https
+#>   host    : github.com
+#>   username: PersonalAccessToken
+#>   password: <-- hidden -->
+```
+
+## PAT on the back for RStudio {.smaller}
+
+</br>
+
+If you need to change anything, use `gitcreds::gitcreds_set()`
+
+```         
+> gitcreds::gitcreds_set()
+
+-> Your current credentials for 'https://github.com':
+
+  protocol: https
+  host    : github.com
+  username: PersonalAccessToken
+  password: <-- hidden -->
+
+-> What would you like to do? 
+
+1: Keep these credentials
+2: Replace these credentials
+3: See the password / token
+
+Selection: 2
+
+-> Removing current credentials...
+
+? Enter new password or token: ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+-> Adding new credentials...
+-> Removing credentials from cache...
+-> Done.
+```
+
+## Git and R, sitting in a tree {.smaller}
+
+</br>
+
+If that's all working, we can get RStudio ready to clone a Git repo.
+
+</br>
+
+Some things before we start:
+
+-   The repo should exist on GitHub before R can make a clone
+
+-   All Git local repos should go in a folder called 'git' in the home directory
+
+    -   e.g., `/Users/tewilkins/git`
+
+-   All repos will be treated as separate R projects
+
+-   Check you're using the most current version of RStudio and R
+
+    -   Type `version` for R, see "About RStudio" for RStudio version
+
+</br>
+
+With these in mind, skip to [Chapter 12 - Connect RStudio to Git and GitHub](https://happygitwithr.com/rstudio-git-github)
+
+## Git and R, sitting in a tree
+
+</br>
+
+Head to [GitHub.com](https://github.com/) to create a repo and follow steps for RStudio version control project.
+
+![](https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png){fig-align="center"}
 
 ## Other resources
 
