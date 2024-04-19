@@ -236,8 +236,6 @@ Key terms:
 ::: {.column width="40%"}
 -   Can go back to all previous versions, provided that the local and master repos are up-to-date
 
-</br>
-
 ::: fragment
 -   Each committed version requires a message
 :::
@@ -257,20 +255,27 @@ Key terms:
 
 </br>
 
+No right or wrong, but...
+
+::: fragment
 -   Generally, lightweight text and script files
 
     -   R scripts
-    -   Rmarkdown and Quarto
+    -   Example datasets for testing
+    -   Rmarkdown and Quarto files
+:::
 
-</br>
-
+::: fragment
 -   Documentation
 
     -   Readme files
 
     -   Metadata
+:::
 
 ## What should I NOT be pushing to GitHub?
+
+</br>
 
 -   Large files (\>100MB - shouldn't be anywhere near that!)
 
@@ -507,6 +512,10 @@ Head to [GitHub.com](https://github.com/) to create a repo and follow steps for 
 
 ::: columns
 ::: {.column width="50%"}
+-   [GitHub student developer pack](https://education.github.com/pack)
+-   [GitKraken](https://www.gitkraken.com/)
+-   [DataCamp introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
+-   People!
 :::
 
 ::: {.column width="50%"}
