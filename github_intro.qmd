@@ -23,7 +23,7 @@ editor: visual
 
     -   [happygitwithr.com](https://happygitwithr.com/)
 
-    -   goodbye
+    -   Hello
 :::
 
 ::: {.column width="55%"}
