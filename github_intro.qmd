@@ -22,6 +22,8 @@ editor: visual
 -   Setting up GitHub with RStudio
 
     -   [happygitwithr.com](https://happygitwithr.com/)
+
+    -   Hello
 :::
 
 ::: {.column width="55%"}
