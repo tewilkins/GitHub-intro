@@ -253,7 +253,7 @@ Key terms:
 :::
 :::
 
-## What should I be pushing to GitHub?
+## What should I be pushing to GitHub? {.smaller}
 
 </br>
 
@@ -395,9 +395,8 @@ It now requires authentication via credential setup:
 -   [Public-private SSH key pair (Chapter 10)](https://happygitwithr.com/ssh-keys)
 
     -   Necessary for RCP servers
-    -   Involves a lot of Terminal - be careful...
 
-## 
+    -   Involves a lot of Terminal
 :::
 
 ## PATs for RStudio {.smaller}
@@ -512,14 +511,7 @@ Head to [GitHub.com](https://github.com/) to create a repo and follow steps for 
 
 ## Other resources
 
-::: columns
-::: {.column width="50%"}
 -   [GitHub student developer pack](https://education.github.com/pack)
 -   [GitKraken](https://www.gitkraken.com/)
 -   [DataCamp introduction to R](https://www.datacamp.com/courses/free-introduction-to-r)
 -   People!
-:::
-
-::: {.column width="50%"}
-:::
-:::
