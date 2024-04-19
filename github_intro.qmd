@@ -3,6 +3,7 @@ title: "Secure workflow with R and GitHub"
 author: "Burnley R Club meeting 19/4/2024"
 format: 
   revealjs:
+    theme: solarized
     mermaid:
       theme: forest
 editor: visual
@@ -14,11 +15,11 @@ editor: visual
 ::: {.column width="45%"}
 </br>
 
--   Introduction to Git and data management
+-   Introduction to git and data management
 
 -   Incorporate git into your R workflow
 
--   Gitting started with GitHub in R
+-   Setting up GitHub with RStudio
 
     -   [happygitwithr.com](https://happygitwithr.com/)
 :::
@@ -29,7 +30,7 @@ editor: visual
 :::
 
 ::: {layout="[[1], [70,30]]"}
-![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){width="569"}![](https://i.ibb.co/x13T9Bm/github-logo.png){fig-align="center" width="382"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){width="569"}![](https://1000logos.net/wp-content/uploads/2021/05/GitHub-logo.png){fig-align="center" width="373"}
 :::
 
 ## What are git and GitHub? {.smaller}
@@ -90,7 +91,7 @@ editor: visual
 Bad practices:
 :::
 
-::: incremental
+::: fragment
 -   Important files on local storage (Hard disk, USB flash drives)
 -   Breaking file paths (Moving files around)
 -   Duplicate files
@@ -102,51 +103,63 @@ Bad practices:
 Good practices:
 :::
 
-::: incremental
+::: fragment
 -   Keep files away from your computer!
--   Develop a model for clean workflow
--   Make your work portable
+-   Develop a model for clean workflow across platforms
+-   Make your code **portable** and **future-proof**
 :::
+
+##  {.smaller}
+
+![](https://i.ibb.co/kMtJ6cG/codearticle.png){fig-align="center"}
 
 ##  {.smaller}
 
 ::: columns
 ::: {.column width="33%"}
-![](https://i.ibb.co/hsqz2sb/github-logo-7880-D80-B8-D-seeklogo-com.png){fig-align="center" width="250" height="250"}
+![](https://i.ibb.co/hsqz2sb/github-logo-7880-D80-B8-D-seeklogo-com.png){fig-align="center" width="200" height="200"}
 
 **GitHub.com**
 
-::: incremental
+::: fragment
 -   Version control for R code
 -   Quarto/Rmarkdown documents
 :::
 :::
 
 ::: {.column width="33%"}
-![](https://i.ibb.co/fpX20YN/7def1485a80115c48e19b450e6a39e4a.jpg){fig-align="center" width="250"}
+![](https://i.ibb.co/stnbfJT/2758630.png){fig-align="center" width="200"}
 
 **Relational databases**
 
-::: incremental
+::: fragment
 -   Large datasets
 -   Spatial imaging data
 :::
 :::
 
 ::: {.column width="33%"}
-![](https://i.ibb.co/QfGCnw3/2840068.png){fig-align="center" width="250"}
+![](https://i.ibb.co/QfGCnw3/2840068.png){fig-align="center" width="200"}
 
 **Organisational share drive**
 
-::: incremental
+::: fragment
 -   Read and write working files
--   MS documents
+-   Raw or draft data files
 :::
 :::
 :::
 
-::: incremental
-![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){width="400" fig-align="center"}
+::: fragment
+::: columns
+::: {.column width="30%"}
+![](https://i.ibb.co/dLdfd0Y/key-arrow-right-icon-136476.png){fig-align="right" width="150"}
+:::
+
+::: {.column width="70%"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){fig-align="left" width="400"}
+:::
+:::
 :::
 
 ## GitHub workflow for single-user {.smaller}
@@ -197,11 +210,11 @@ Key terms:
 :::
 :::
 
-## GitHub workflow with version control
+## GitHub workflow with version control {.smaller}
 
 ```{mermaid}
 %%| fig-responsive: false
-%%| fig-height: 3
+%%| fig-height: 2
 %%| fig-width: 10
 
   graph LR
@@ -217,7 +230,28 @@ Key terms:
 
 ```
 
-Can go back to previous versions, provided that the local repo and master repo are up-to-date.
+</br>
+
+::: columns
+::: {.column width="40%"}
+-   Can go back to all previous versions, provided that the local and master repos are up-to-date
+
+</br>
+
+::: fragment
+-   Each committed version requires a message
+:::
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="50%"}
+::: fragment
+![](https://imgs.xkcd.com/comics/git_commit.png)
+:::
+:::
+:::
 
 ## What should I be pushing to GitHub?
 
@@ -270,11 +304,42 @@ Work on one local repo at a time
 
 -   If working with others, make sure to communicate carefully
 
-## Gitting set up!
+## Gitting set up {.smaller}
 
 Initial setup is a bit harrowing... and it involves a few tedious steps.
+And it's different for Mac, Windows and Linux.
 Bear with me!
 
--   Setting up a Github.com account
+All instructions come from [happygitwithr.com:](https://happygitwithr.com/)
 
--   Creating a Personal Access Token (PAT)
+::: columns
+::: {.column width="50%"}
+</br>
+
+-   Set up a [Github.com](https://github.com/) account
+
+-   Create a Personal Access Token (PAT)
+
+-   Test the connection between GitHub and your computer
+
+-   Clone repo to a local file
+
+-   Test initial commit, push and pull
+:::
+
+::: {.column width="50%"}
+![https://happygitwithr.com/](https://i.ibb.co/wzgcj3X/qr-code-gitr.png){fig-align="center" width="400"}
+:::
+:::
+
+## 
+
+## Other resources
+
+::: columns
+::: {.column width="50%"}
+:::
+
+::: {.column width="50%"}
+:::
+:::
