@@ -393,7 +393,7 @@ It now requires authentication via credential setup:
 ## 
 :::
 
-## PAT on the back for RStudio {.smaller}
+## PATs for RStudio {.smaller}
 
 </br>
 
@@ -422,7 +422,7 @@ This opens your browser and takes you to the GitHub.com site to create a new git
 -> Done.
 ```
 
-## PAT on the back for RStudio {.smaller}
+## PATs for RStudio {.smaller}
 
 </br>
 
@@ -437,7 +437,7 @@ Check that you've stored a credential with `gitcreds::gitcreds_get()`:
 #>   password: <-- hidden -->
 ```
 
-## PAT on the back for RStudio {.smaller}
+## PATs for RStudio {.smaller}
 
 </br>
 
